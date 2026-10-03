@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f1eb;
+  color: #2b211c;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: auto;
+}
+
+
+/* HEADER */
+
+header {
+  background: #2b211c;
+  color: white;
+  padding: 45px 20px 35px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  margin-top: 8px;
+  color: #d9c5ae;
+  font-size: 15px;
+}
+
+
+/* CATEGORY */
+
+.categories {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #ffffff;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+.category-inner {
+  display: flex;
+  gap: 10px;
+  padding: 14px 0;
+  white-space: nowrap;
+}
+
+.category-inner a {
+  text-decoration: none;
+  color: #49382f;
+  background: #f1ebe4;
+  padding: 10px 16px;
+  border-radius: 30px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.category-inner a:hover {
+  background: #2b211c;
+  color: white;
+}
+
+
+/* MAIN */
+
+main {
+  padding: 45px 0;
+}
+
+.section {
+  margin-bottom: 50px;
+  scroll-margin-top: 75px;
+}
+
+
+/* SECTION TITLE */
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.section-title h2 {
+  font-size: 25px;
+}
+
+.section-title small {
+  font-size: 13px;
+  color: #8b796b;
+  font-weight: normal;
+}
+
+.line {
+  height: 1px;
+  flex: 1;
+  background: #d5c8bb;
+}
+
+
+/* MENU */
+
+.menu-list {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 17px 20px;
+  border-bottom: 1px solid #eee8e2;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.item-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.item-price {
+  font-weight: 700;
+  color: #7a4b2a;
+  white-space: nowrap;
+}
+
+
+/* FOOTER */
+
+footer {
+  background: #2b211c;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+footer p {
+  color: #d9c5ae;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+
+/* TELEFON */
+
+@media (max-width: 600px) {
+
+  header {
+    padding: 35px 15px 30px;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  main {
+    padding: 30px 0;
+  }
+
+  .section-title h2 {
+    font-size: 21px;
+  }
+
+  .item {
+    padding: 15px;
+  }
+
+  .item-name {
+    font-size: 14px;
+  }
+
+  .item-price {
+    font-size: 14px;
+  }
+}
